@@ -7,6 +7,7 @@
 
 #include "MyCombo.h"
 #include "View.h"
+#include "AboutDialog.h"
 
 
 ///////////////////////////////////////////////////////////
@@ -26,6 +27,7 @@ public:
 protected:
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual LRESULT OnNotify(WPARAM wparam, LPARAM lparam) override;
     virtual void SetupMenuIcons() override;
@@ -44,7 +46,6 @@ private:
     BOOL OnEditCopy();
     BOOL OnEditPaste();
     BOOL OnEditDelete();
-    BOOL OnHelpAbout();
     BOOL OnFileExit();
     BOOL OnForward();
     BOOL OnHome();
@@ -70,8 +71,9 @@ private:
     void OnTitleChange(DISPPARAMS* pDispParams);
 
     // Member variables
-    CView     m_view;
-    CMyCombo  m_combo;
+    CAboutDialog  m_aboutDialog;
+    CView         m_view;
+    CMyCombo      m_combo;
 };
 
 #endif //MAINFRM_H

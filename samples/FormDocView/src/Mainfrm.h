@@ -4,6 +4,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "FormView.h"
 
 
@@ -25,6 +26,7 @@ protected:
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
     virtual BOOL OnFileExit();
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual void OnMenuUpdate(UINT nID) override;
     virtual BOOL SaveRegistrySettings() override;
@@ -43,6 +45,7 @@ private:
     void OnUpdateRangeOfIDs(UINT idFirst, UINT idLast, UINT id);
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CFormView m_formView;
 };
 

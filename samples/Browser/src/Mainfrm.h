@@ -7,6 +7,7 @@
 
 #include "MyCombo.h"
 #include "EventSink.h"
+#include "AboutDialog.h"
 
 
 ///////////////////////////////////////////////////////////
@@ -26,6 +27,7 @@ protected:
     virtual void OnClose() override;
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual LRESULT OnNotify(WPARAM wparam, LPARAM lparam) override;
     virtual void SetupMenuIcons() override;
@@ -49,7 +51,6 @@ private:
     BOOL OnEditPaste();
     BOOL OnEditDelete();
     BOOL OnForward();
-    BOOL OnHelpAbout();
     BOOL OnHome();
     BOOL OnPrint();
     BOOL OnPrintPreview();
@@ -73,10 +74,11 @@ private:
     void OnTitleChange(DISPPARAMS* pDispParams);
 
     // Member variables
-    CWebBrowser m_browser;          // Win32++'s web browser defined in wxx_webbrowser.h
-    CMyCombo    m_combo;            // ComboBoxEx control used in the toolbar.
-    CEventSink  m_eventSink;        // Routes event notifications from IWebBrowser.
-    DWORD       m_eventCookie;      // Token that uniquely identifies this connection.
+    CAboutDialog  m_aboutDialog;    // Help About dialog.
+    CWebBrowser   m_browser;        // Win32++'s web browser defined in wxx_webbrowser.h
+    CMyCombo      m_combo;          // ComboBoxEx control used in the toolbar.
+    CEventSink    m_eventSink;      // Routes event notifications from IWebBrowser.
+    DWORD         m_eventCookie;    // Token that uniquely identifies this connection.
 };
 
 

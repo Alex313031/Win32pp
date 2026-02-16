@@ -1,7 +1,7 @@
 [Project]
 FileName=ReBarDemo_RELEASE.dev
 Name=ReBarDemo
-UnitCount=11
+UnitCount=12
 Type=0
 Ver=2
 ObjFiles=
@@ -161,7 +161,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit12]
-FileName=..\src\View.h
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

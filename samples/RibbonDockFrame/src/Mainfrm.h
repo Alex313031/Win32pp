@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "View.h"
 #include "Doc.h"
 
@@ -27,6 +28,7 @@ protected:
     virtual STDMETHODIMP UpdateProperty(UINT32, __in REFPROPERTYKEY, __in_opt  const PROPVARIANT*, __out PROPVARIANT*) override;
 
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual void    SetupToolBar() override;
     virtual LRESULT WndProc(UINT msg, WPARAM wparam, LPARAM lparam) override;
@@ -58,6 +60,7 @@ private:
     void SetPenColor(COLORREF clr);
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CView m_view;
     CDoc m_doc;
     CString m_pathName;

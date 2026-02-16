@@ -48,6 +48,11 @@
 #define IDM_CARD_HEART                  172
 #define IDM_CARD_SPADE                  173
 
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     180
+#define IDC_STATIC2                     181
+
+
 
 // Next default values for new objects
 //

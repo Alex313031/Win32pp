@@ -6,6 +6,7 @@
 #define MAINFRM_H
 
 #include "DXView.h"
+#include "AboutDialog.h"
 
 
 ///////////////////////////////////////////////////////////
@@ -24,6 +25,7 @@ protected:
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
     virtual void    OnDestroy() override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual void    SetupMenuIcons() override;
     virtual void    SetupToolBar() override;
@@ -37,8 +39,9 @@ private:
     BOOL OnFileExit();
 
     // Member variables
-    CDXView m_DXView;
-    CImageList m_normalImages;
+    CAboutDialog m_aboutDialog;
+    CDXView      m_DXView;
+    CImageList   m_normalImages;
 };
 
 #endif //MAINFRM_H

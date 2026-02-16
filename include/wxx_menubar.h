@@ -862,7 +862,7 @@ namespace Win32xx
 
         // Hook messages about to be processed by the shortcut menu.
         m_msgHook = ::SetWindowsHookEx(WH_MSGFILTER, (HOOKPROC)StaticMsgHook,
-            NULL, ::GetCurrentThreadId());
+            nullptr, ::GetCurrentThreadId());
 
         // Display the shortcut menu.
         bool isRightToLeft = false;

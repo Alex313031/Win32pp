@@ -5,6 +5,8 @@
 #ifndef MAINMDIFRM_H
 #define MAINMDIFRM_H
 
+#include "AboutDialog.h"
+
 
 ///////////////////////////////////////////////////////////////
 // CMainMDIFrame manages the application's main window.
@@ -20,6 +22,7 @@ public:
 protected:
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual LRESULT OnNotify(WPARAM wparam, LPARAM lparam) override;
     virtual void SetupMenuIcons() override;
@@ -43,6 +46,8 @@ private:
     BOOL OnMDICloseAll();
     BOOL OnMDIIconArrange();
     BOOL OnMDITile();
+
+    CAboutDialog m_aboutDialog;
 };
 
 #endif  //MAINMDIFRM_H

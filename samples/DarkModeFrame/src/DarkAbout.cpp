@@ -110,6 +110,15 @@ BOOL CDarkAbout::OnInitDialog()
     BOOL value = IsDarkMode() ? TRUE : FALSE;
     ::DwmSetWindowAttribute(*this, DWMWA_USE_IMMERSIVE_DARK_MODE, &value, sizeof(value));
 
+    // Set the Win32++ version string.
+    UINT ver = _WIN32XX_VER;
+    CString Win32xxVersion;
+    Win32xxVersion << "Win32++ Version " << ver / 0x100 << "." <<
+        (ver % 0x100) / 0x10 << "." << (ver % 0x10);
+
+    SetDlgItemText(IDC_STATIC1, Win32xxVersion);
+    SetDlgItemText(IDC_STATIC2, L"by David Nash");
+
     return TRUE;
 }
 

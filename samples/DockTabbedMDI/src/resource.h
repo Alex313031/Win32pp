@@ -40,7 +40,7 @@
 
 // Menu Resource
 #define IDM_NEWMENU                     140
-#define IDM_FILE_NEWBROWSER              141
+#define IDM_FILE_NEWBROWSER             141
 #define IDM_FILE_NEWRECT                142
 #define IDM_FILE_NEWTEXT                143
 #define IDM_FILE_NEWTREE                144
@@ -52,7 +52,7 @@
 #define IDM_CLOSE_DOCKERS               150
 #define IDM_CLOSE_MDIS                  151
 
-//Resource IDs for the dialog
+// Resource IDs for the dialog
 #define IDD_MYDIALOG                    161
 #define IDC_RADIO1                      162
 #define IDC_RADIO2                      163

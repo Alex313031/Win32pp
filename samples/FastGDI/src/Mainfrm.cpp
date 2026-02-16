@@ -156,18 +156,6 @@ BOOL CMainFrame::OnFileExit()
     return TRUE;
 }
 
-// Called when an image has been loaded from a file.
-LRESULT CMainFrame::OnImageLoaded(LPCWSTR fileName)
-{
-    SetWindowText(fileName);
-    CRect rcImage(CPoint(), GetImage().GetSize());
-    AdjustFrameRect(rcImage);
-    AddMRUEntry(fileName);
-    m_mainView.RecalcLayout();
-    return 0;
-}
-
-
 // Clears any selected image.
 BOOL CMainFrame::OnFileNew()
 {
@@ -204,15 +192,8 @@ BOOL CMainFrame::OnFileOpenMRU(WPARAM wparam, LPARAM)
 {
     UINT mruIndex = LOWORD(wparam) - IDW_FILE_MRU_FILE1;
     CString mruText = GetMRUEntry(mruIndex);
-    GetImageView().LoadFileImage(mruText);
-//    CToolBar& tb = GetToolBar();
-
-/*    if (!LoadFile(mruText))
-    {
+    if (!GetImageView().LoadFileImage(mruText))
         RemoveMRUEntry(mruText);
-        tb.DisableButton(IDM_FILE_SAVEAS);
-        tb.DisableButton(IDM_IMAGE_ADJUST);
-    } */
 
     return TRUE;
 }
@@ -295,6 +276,29 @@ BOOL CMainFrame::OnFileSaveAs()
     }
 
     return TRUE;
+}
+
+// Display the help about dialog.
+BOOL CMainFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
+// Called when an image has been loaded from a file.
+LRESULT CMainFrame::OnImageLoaded(LPCWSTR fileName)
+{
+    SetWindowText(fileName);
+    CRect rcImage(CPoint(), GetImage().GetSize());
+    AdjustFrameRect(rcImage);
+    AddMRUEntry(fileName);
+    m_mainView.RecalcLayout();
+    return 0;
 }
 
 // Called after the window is created.

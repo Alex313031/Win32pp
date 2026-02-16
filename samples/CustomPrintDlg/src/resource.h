@@ -57,6 +57,9 @@
 #define IDC_GROUPBOX2                   217
 #define IDC_GROUPBOX3                   218
 
+#define IDC_STATIC1                     220
+#define IDC_STATIC2                     221
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

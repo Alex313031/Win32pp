@@ -93,6 +93,7 @@
     <ClInclude Include="..\..\..\include\wxx_webbrowser.h" />
     <ClInclude Include="..\..\..\include\wxx_wincore.h" />
     <ClInclude Include="..\..\..\include\wxx_wincore0.h" />
+    <ClInclude Include="..\src\AboutDialog.h" />
     <ClInclude Include="..\src\Browser.h" />
     <ClInclude Include="..\src\Classes.h" />
     <ClInclude Include="..\src\Files.h" />

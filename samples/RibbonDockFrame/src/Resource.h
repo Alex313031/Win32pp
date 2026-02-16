@@ -34,6 +34,10 @@
 //Resource ID for the cursor
 #define IDC_CURSOR1                     160
 
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     190
+#define IDC_STATIC2                     191
+
 // Bitmaps for the FileFiew Bitmap
 #define IDB_FILEVIEW                    230
 

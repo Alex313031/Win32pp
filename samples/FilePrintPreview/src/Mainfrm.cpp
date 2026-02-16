@@ -431,6 +431,23 @@ OnFileSaveAs()                                                              /*
 }
 
 /*============================================================================*/
+    // Display the help about dialog.
+    BOOL CMainFrame
+::OnHelp()                                                             /*
+
+    Display the help about dialog.
+*-----------------------------------------------------------------------------*/
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
+/*============================================================================*/
     void CMainFrame::
 OnInitialUpdate()                                                           /*
 

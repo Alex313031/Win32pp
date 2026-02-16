@@ -29,6 +29,13 @@
 #define IDI_DOCK                        160
 #define IDI_VIEW                        161
 
+// Menu Resource
+#define IDM_COLOR_BLACK                 163
+#define IDM_COLOR_RED                   164
+#define IDM_COLOR_GREEN                 165
+#define IDM_COLOR_BLUE                  166
+#define IDM_COLOR_WHITE                 167
+
 // Bitmaps for the toolbar and menus
 #define IDB_TOOLBAR16                   180
 #define IDB_TOOLBAR24_DIS               181
@@ -47,12 +54,9 @@
 #define IDI_FILEVIEW                    237
 #define IDI_TEXT                        238
 
-// Menu Resource
-#define IDM_COLOR_BLACK                 163
-#define IDM_COLOR_RED                   164
-#define IDM_COLOR_GREEN                 165
-#define IDM_COLOR_BLUE                  166
-#define IDM_COLOR_WHITE                 167
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     240
+#define IDC_STATIC2                     241
 
 // Next default values for new objects
 //

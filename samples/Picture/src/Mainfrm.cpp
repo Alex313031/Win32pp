@@ -158,6 +158,19 @@ BOOL CMainFrame::OnFileOpen()
     return TRUE;
 }
 
+
+// Display the help about dialog.
+BOOL CMainFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
 // Called when an image has been loaded from a file.
 LRESULT CMainFrame::OnImageLoaded(LPCWSTR fileName)
 {

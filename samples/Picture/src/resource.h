@@ -27,6 +27,10 @@
 #define IDB_TOOLBAR24_HOT               151
 #define IDB_TOOLBAR24_DIS               152
 
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     160
+#define IDC_STATIC2                     161
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

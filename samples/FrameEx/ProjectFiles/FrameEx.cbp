@@ -122,6 +122,7 @@
 		<Unit filename="../../../include/wxx_webbrowser.h" />
 		<Unit filename="../../../include/wxx_wincore.h" />
 		<Unit filename="../../../include/wxx_wincore0.h" />
+		<Unit filename="../src/AboutDialog.h" />
 		<Unit filename="../src/Doc.cpp" />
 		<Unit filename="../src/Doc.h" />
 		<Unit filename="../src/FrameApp.cpp" />

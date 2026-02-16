@@ -17,6 +17,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "RichView.h"
 #include "PrintPreview.h"
 
@@ -53,7 +54,6 @@ CMainFrame : public CFrame                                                  /*
         BOOL    OnFileSaveAs();
         BOOL    OnOptionsFont();
         BOOL    OnOptionsWrap(WordWrapType);
-
         void    QuickPrint(CPrintDialog& printDlg);
         BOOL    ReadFile(LPCWSTR path);
         void    SaveModifiedText();
@@ -64,6 +64,7 @@ CMainFrame : public CFrame                                                  /*
         virtual void    OnClose() override;
         virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
         virtual int     OnCreate(CREATESTRUCT& cs) override;
+        virtual BOOL    OnHelp() override;
         virtual void    OnInitialUpdate() override;
         virtual void    OnMenuUpdate(UINT id) override;
         virtual LRESULT OnNotify(WPARAM wparam, LPARAM lparam) override;
@@ -76,6 +77,7 @@ CMainFrame : public CFrame                                                  /*
         CMainFrame(const CMainFrame&) = delete;
         CMainFrame& operator=(const CMainFrame&) = delete;
 
+        CAboutDialog    m_aboutDialog;
         CPrintPreviewEx m_printPreview;
         CRichView       m_richView;
         CString         m_path;

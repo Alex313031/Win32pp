@@ -230,8 +230,7 @@ void CView::PrintPage(CDC& dc, int)
 void CView::QuickPrint(LPCWSTR docName)
 {
     // Create a DOCINFO structure.
-    DOCINFO di;
-    memset(&di, 0, sizeof(DOCINFO));
+    DOCINFO di = {};
     di.cbSize = sizeof(DOCINFO);
     di.lpszDocName = docName;
 

@@ -61,6 +61,25 @@ int CMainFrame::OnCreate(CREATESTRUCT& cs)
     return CFrame::OnCreate(cs);
 }
 
+// Issue a close request to the frame to end the program.
+BOOL CMainFrame::OnFileExit()
+{
+    Close();
+    return TRUE;
+}
+
+// Display the help about dialog.
+BOOL CMainFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
 // Called after the window is created.
 void CMainFrame::OnInitialUpdate()
 {
@@ -68,13 +87,6 @@ void CMainFrame::OnInitialUpdate()
     // Place any additional startup code here.
 
     TRACE("Frame created\n");
-}
-
-// Issue a close request to the frame to end the program.
-BOOL CMainFrame::OnFileExit()
-{
-    Close();
-    return TRUE;
 }
 
 // Process notification messages (WM_NOTIFY) sent by child windows.

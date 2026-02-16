@@ -1,7 +1,7 @@
 [Project]
 FileName=CustomPrintDlg_DEBUG.dev
 Name=CustomPrintDlg
-UnitCount=14
+UnitCount=15
 Type=0
 Ver=2
 ObjFiles=
@@ -190,9 +190,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit15]
-FileName=..\src\CustomPrintDlg.cpp
+FileName=..\..\Browser\src\AboutDialog.h
 CompileCpp=1
-Folder=Source
+Folder=Header
 Compile=1
 Link=1
 Priority=1000

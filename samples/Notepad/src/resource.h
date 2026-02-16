@@ -37,6 +37,10 @@
 #define IDW_INDICATOR_RICH              173
 #define IDW_MENUICONS                   180
 
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     190
+#define IDC_STATIC2                     191
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

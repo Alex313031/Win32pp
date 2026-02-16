@@ -1,7 +1,7 @@
 [Project]
 FileName=FilePrintPreview_DEBUG.dev
 Name=PrintPreview
-UnitCount=15
+UnitCount=16
 Type=0
 Ver=2
 ObjFiles=
@@ -201,9 +201,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit16]
-FileName=..\src\main.cpp
+FileName=..\src\AboutDialog.h
 CompileCpp=1
-Folder=Source
+Folder=Header
 Compile=1
 Link=1
 Priority=1000

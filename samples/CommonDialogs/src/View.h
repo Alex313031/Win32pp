@@ -62,7 +62,7 @@ private:
     HWND            m_parent;       // handle of parent frame
     CToolTip        m_toolTip;      // form tool tips
     CFont           m_editFont;     // edit box font
-    CBrush          m_bgBrush;      // backbround brush object
+    CBrush          m_bgBrush;      // background brush object
     CRichEditView   m_richView;     // the view of the document
 };
 

@@ -6,7 +6,7 @@
 ===============================================================================*
 
     Contents Description: Declaration and implementation of the MyFileDlg class,
-    which is derived from the CFileDalog class found in the Win32++ Windows
+    which is derived from the CFileDialog class found in the Win32++ Windows
     interface framework in order to add a title to the dialog.
 
 *******************************************************************************/

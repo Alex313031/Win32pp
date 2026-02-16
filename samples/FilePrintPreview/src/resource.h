@@ -84,4 +84,8 @@
 #define IDI_FONT_OPTION                 194
 #define IDI_CHECKBOX_OFF                195
 
+ // resource IDs of the about help
+#define IDC_STATIC1                     200
+#define IDC_STATIC2                     201
+
 /*----------------------------------------------------------------------------*/

@@ -5,6 +5,7 @@
 #ifndef MAINMDIFRM_H
 #define MAINMDIFRM_H
 
+#include "AboutDialog.h"
 #include "Doc.h"
 
 
@@ -30,6 +31,7 @@ protected:
 
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam);
     virtual int OnCreate(CREATESTRUCT &cs);
+    virtual BOOL OnHelp() override;
     virtual void SetupToolBar();
     virtual LRESULT WndProc(UINT msg, WPARAM wparam, LPARAM lparam);
 
@@ -48,6 +50,7 @@ private:
     void OnPenColor(const PROPVARIANT* ppropvarValue, IUISimplePropertySet* pCmdExProp);
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CDoc m_doc;
     CString m_pathName;
     IUIRibbon* m_pIUIRibbon;

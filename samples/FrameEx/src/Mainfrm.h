@@ -18,13 +18,12 @@ using std::max;
 
 #include <gdiplus.h>
 #ifdef _MSC_VER
-
-
 #pragma warning (default : 4458) // return warning to default
 #endif
 
 #include <memory>   // Required by VS2015 for unique_ptr
 #include "View.h"
+#include "AboutDialog.h"
 
 using BitmapPtr = std::unique_ptr<Gdiplus::Bitmap>;
 
@@ -49,6 +48,7 @@ protected:
     virtual void    OnClose() override;
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual LRESULT OnNotify(WPARAM wparam, LPARAM lparam) override;
     virtual void    PreCreate(CREATESTRUCT& cs) override;
@@ -74,6 +74,7 @@ private:
     LRESULT OnPreviewSetup();
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CView m_view;
     CPrintPreview<CView> m_preview;
     bool m_isToolbarShown;

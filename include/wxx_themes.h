@@ -53,7 +53,7 @@ namespace Win32xx
     // Declarations of structures for themes.
     //
 
-    // Defines the theme colors for the MenuBar and popup menues.
+    // Defines the theme colors for the MenuBar and popup menus.
     // The popup menu colors are replaced by the Aero theme if available (Vista and above)
     struct MenuTheme
     {

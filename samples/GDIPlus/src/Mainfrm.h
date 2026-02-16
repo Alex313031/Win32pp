@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "GDIPlusView.h"
 
 
@@ -24,6 +25,7 @@ public:
 protected:
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual LRESULT OnNotify(WPARAM wparam, LPARAM lparam) override;
     virtual void SetupMenuIcons() override;
@@ -34,6 +36,7 @@ private:
     CMainFrame(const CMainFrame&) = delete;
     CMainFrame& operator=(const CMainFrame&) = delete;
 
+    CAboutDialog m_aboutDialog;
     CGDIPlusView m_view;
 };
 

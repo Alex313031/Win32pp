@@ -1,7 +1,7 @@
 [Project]
 FileName=ScintillaDemo_RELEASE.dev
 Name=ScintillaDemo
-UnitCount=13
+UnitCount=14
 Type=0
 Ver=2
 ObjFiles=
@@ -194,6 +194,16 @@ BuildCmd=
 FileName=..\..\..\include\wxx_wincore0.h
 CompileCpp=1
 Folder=Win32++
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit14]
+FileName=..\src\AboutDialog.h
+CompileCpp=1
+Folder=Header
 Compile=1
 Link=1
 Priority=1000

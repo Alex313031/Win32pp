@@ -132,7 +132,7 @@ OnCommand(WPARAM wparam, LPARAM)                                     /*
         case IDM_EDIT_REDO:        return OnEditRedo();
         case IDM_EDIT_UNDO:        return OnEditUndo();
         case IDM_FILE_EXIT:        return OnFileExit();
-        case IDW_ABOUT:            return CFrame::OnHelp();
+        case IDW_ABOUT:            return OnHelp();
         case IDW_VIEW_STATUSBAR:   return OnViewStatusBar();
         case IDW_VIEW_TOOLBAR:     return OnViewToolBar();
 
@@ -250,6 +250,23 @@ OnFileExit()                                                                /*
     Close();
     return TRUE;
 }
+
+/*============================================================================*/
+    BOOL CMainFrame::
+OnHelp()
+                                                                            /*
+    Display the help about dialog.
+*-----------------------------------------------------------------------------*/
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
 
 /*============================================================================*/
     void CMainFrame::

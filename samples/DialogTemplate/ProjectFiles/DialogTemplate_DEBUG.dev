@@ -1,7 +1,7 @@
 [Project]
 FileName=DialogTemplate_DEBUG.dev
 Name=DialogTemplate
-UnitCount=18
+UnitCount=19
 Type=0
 Ver=2
 ObjFiles=
@@ -231,7 +231,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit19]
-FileName=..\src\UserMessages.h
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

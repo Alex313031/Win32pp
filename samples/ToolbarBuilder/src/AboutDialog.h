@@ -13,7 +13,7 @@ class CAboutDialog : public CDialog
 {
 public:
     CAboutDialog() : CDialog(IDW_ABOUT) {}
-    BOOL OnInitDialog()
+    virtual BOOL OnInitDialog() override
     {
         // Set the Win32++ version string.
         UINT ver = _WIN32XX_VER;

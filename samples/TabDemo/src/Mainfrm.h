@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "MyTab.h"
 
 ///////////////////////////////////////////////////////////
@@ -21,6 +22,7 @@ public:
 protected:
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual void OnMenuUpdate(UINT id) override;
     virtual void PreCreate(CREATESTRUCT& cs) override;
@@ -31,7 +33,7 @@ private:
     CMainFrame(const CMainFrame&) = delete;
     CMainFrame& operator=(const CMainFrame&) = delete;
 
-    // COmmand handlers
+    // Command handlers
     BOOL OnFileExit();
     BOOL OnNewClassesTab();
     BOOL OnNewDialogTab();
@@ -43,6 +45,7 @@ private:
     BOOL OnTabFixedWidth();
     BOOL OnTabOwnerDraw();
 
+    CAboutDialog m_aboutDialog;
     CMyTab m_view;
 };
 

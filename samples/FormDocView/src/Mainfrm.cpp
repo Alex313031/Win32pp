@@ -93,6 +93,18 @@ int CMainFrame::OnCreate(CREATESTRUCT& cs)
     return CFrame::OnCreate(cs);
 }
 
+// Display the help about dialog.
+BOOL CMainFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
 // Called after the frame window is created.
 void CMainFrame::OnInitialUpdate()
 {

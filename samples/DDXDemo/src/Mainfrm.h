@@ -24,6 +24,7 @@
 #define MAINFRM_H
 
 #include "View.h"
+#include "AboutDialog.h"
 
 /*============================================================================*/
     class
@@ -45,6 +46,7 @@ CMainFrame : public CFrame                                                  /*
        virtual void    OnClose() override;
        virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
        virtual int     OnCreate(CREATESTRUCT& cs) override;
+       virtual BOOL    OnHelp() override;
        virtual void    OnInitialUpdate() override;
        virtual void    OnMenuUpdate(UINT id) override;
        virtual void    SetupMenuIcons() override;
@@ -65,7 +67,8 @@ CMainFrame : public CFrame                                                  /*
         BOOL    OnFileExit();
         BOOL    OnRadioButton(UINT id);
 
-        CView   m_view;
+        CAboutDialog m_aboutDialog;
+        CView        m_view;
 };
 /*----------------------------------------------------------------------------*/
 #endif //MAINFRM_H

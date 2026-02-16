@@ -1,7 +1,7 @@
 [Project]
 FileName=MDIDockFrame_DEBUG.dev
 Name=DockMDIFrame
-UnitCount=13
+UnitCount=14
 Type=0
 Ver=2
 ObjFiles=
@@ -220,6 +220,16 @@ BuildCmd=
 
 [Unit13]
 FileName=..\src\stdafx.h
+CompileCpp=1
+Folder=Header
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit14]
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

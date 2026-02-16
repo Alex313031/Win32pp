@@ -53,6 +53,10 @@
 #define IDB_CLASSVIEW                   173
 #define IDB_FILEVIEW                    174
 
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     180
+#define IDC_STATIC2                     181
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

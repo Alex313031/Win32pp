@@ -350,6 +350,9 @@
         <None Include="..\..\..\include\wxx_wincore0.h">
             <BuildOrder>67</BuildOrder>
         </None>
+        <None Include="..\src\AboutDialog.h">
+            <BuildOrder>68</BuildOrder>
+        </None>
         <CppCompile Include="..\src\CustomPrintDlg.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>

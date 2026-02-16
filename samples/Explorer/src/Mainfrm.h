@@ -6,6 +6,7 @@
 #define MAINFRM_H
 
 
+#include "AboutDialog.h"
 #include "LeftPane.h"
 #include "RightPane.h"
 
@@ -29,6 +30,7 @@ public:
 protected:
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual LRESULT OnNotify(WPARAM wparam, LPARAM lparam) override;
     virtual BOOL    SaveRegistrySettings() override;
@@ -57,6 +59,7 @@ private:
     void LoadListViewRegistrySettings();
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CDocker* m_pLeftPane;
     CRightPane m_rightPane;
     bool m_showHidden;

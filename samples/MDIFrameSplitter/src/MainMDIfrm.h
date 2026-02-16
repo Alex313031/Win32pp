@@ -5,6 +5,7 @@
 #ifndef MAINMDIFRM_H
 #define MAINMDIFRM_H
 
+#include "AboutDialog.h"
 
 /////////////////////////////////////
 // Declaration of CMainMDIFrame class
@@ -20,6 +21,7 @@ public:
 protected:
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual void SetupMenuIcons() override;
     virtual void SetupToolBar() override;
@@ -41,6 +43,8 @@ private:
     // Message handlers
     LRESULT OnGetMinMaxInfo(UINT msg, WPARAM wparam, LPARAM lparam);
     LRESULT OnMouseActivate(UINT msg, WPARAM wparam, LPARAM lparam);
+
+    CAboutDialog m_aboutDialog;
 };
 
 #endif  //MAINMDIFRM_H

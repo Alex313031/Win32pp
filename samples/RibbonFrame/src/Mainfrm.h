@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "View.h"
 
 
@@ -26,6 +27,7 @@ protected:
     virtual STDMETHODIMP OnViewChanged(UINT32, UI_VIEWTYPE typeId, IUnknown*, UI_VIEWVERB verb, INT32) override;
 
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
+    virtual BOOL OnHelp() override;
     virtual void SetupToolBar() override;
     virtual LRESULT WndProc(UINT msg, WPARAM wparam, LPARAM lparam) override;
 
@@ -51,6 +53,7 @@ private:
     BOOL SetPenColor(COLORREF clr);
 
     // Member variables.
+    CAboutDialog m_aboutDialog;
     CView m_view;
     CString m_pathName;
     IUIRibbon* m_pIUIRibbon;

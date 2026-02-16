@@ -66,6 +66,10 @@
 #define IDM_SHORT_BANDS                 196
 #define IDM_USE_LINES                   197
 
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     200
+#define IDC_STATIC2                     201
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

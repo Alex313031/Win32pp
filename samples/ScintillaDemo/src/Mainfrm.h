@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "scintillaview.h"
 
 
@@ -27,6 +28,7 @@ protected:
     virtual void    OnClose() override;
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual void    OnMenuUpdate(UINT id) override;
     virtual void    SetupMenuIcons() override;
@@ -65,6 +67,7 @@ private:
     void SaveFocus() { m_oldFocus = ::GetFocus(); }
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     ScintillaView m_view;
     CPrintPreview<ScintillaView> m_preview;
     CString m_pathName;

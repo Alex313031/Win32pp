@@ -8,6 +8,7 @@
 #include "RichView.h"
 #include "DialogsTree.h"
 #include "DialogHolder.h"
+#include "AboutDialog.h"
 
 
 ///////////////////////////////////////////////////////////
@@ -30,6 +31,7 @@ public:
 protected:
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual void    OnMenuUpdate(UINT id) override;
     virtual void    SetupMenuIcons() override;
@@ -64,6 +66,7 @@ private:
     BOOL WriteFile(LPCWSTR szFileName);
 
     // Private member variables
+    CAboutDialog m_aboutDialog;
     CRichView m_richView;
     CPrintPreview<CRichView>  m_preview;   // CRichView is the source of for CPrintPreview
     CString m_pathName;

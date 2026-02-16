@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "View.h"
 
 
@@ -24,6 +25,7 @@ protected:
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
     virtual LRESULT OnDpiChanged(UINT msg, WPARAM wparam, LPARAM lparam) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual void    SetupMenuIcons() override;
     virtual void    SetupToolBar() override;
@@ -37,6 +39,7 @@ private:
     void OnFileExit();
 
     // Member variables.
+    CAboutDialog m_aboutDialog;
     CView m_listView;
 };
 

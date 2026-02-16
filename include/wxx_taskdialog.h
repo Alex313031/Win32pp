@@ -175,8 +175,8 @@ namespace Win32xx
     // TD_WARNING_ICON; TD_ERROR_ICON; TD_INFORMATION_ICON; TD_SHIELD_ICON.
     // TaskDialogs support per monitor DPI aware version 2, but a MessageBox
     // currently does not. TaskDialogs are not supported on Windows XP.
-    inline void TaskDialogBox(HWND wnd, LPCTSTR text, LPCTSTR caption,
-        LPTSTR iconType = TD_INFORMATION_ICON)
+    inline void TaskDialogBox(HWND wnd, LPCWSTR text, LPCWSTR caption,
+        LPWSTR iconType = TD_INFORMATION_ICON)
     {
         CTaskDialog taskDialog;
         taskDialog.SetContent(text);

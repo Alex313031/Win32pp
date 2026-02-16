@@ -120,6 +120,7 @@
 		<Unit filename="../../../include/wxx_webbrowser.h" />
 		<Unit filename="../../../include/wxx_wincore.h" />
 		<Unit filename="../../../include/wxx_wincore0.h" />
+		<Unit filename="../src/AboutDialog.h" />
 		<Unit filename="../src/Files.cpp" />
 		<Unit filename="../src/Files.h" />
 		<Unit filename="../src/MDIFrameSplitterApp.cpp" />

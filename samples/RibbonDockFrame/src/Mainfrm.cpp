@@ -219,8 +219,7 @@ void CMainFrame::OnFilePrint()
         if (printDlg.DoModal(GetView()) == IDOK)    // throws exception if there is no default printer
         {
             // Zero and then initialize the members of a DOCINFO structure.
-            DOCINFO di;
-            memset(&di, 0, sizeof(DOCINFO));
+            DOCINFO di = {};
             di.cbSize = sizeof(DOCINFO);
             di.lpszDocName = L"Scribble Printout";
             di.lpszOutput = static_cast<LPWSTR>(nullptr);
@@ -317,6 +316,18 @@ LRESULT CMainFrame::OnGetAllPoints()
 
     // Cast the pointer to a LRESULT and return it
     return reinterpret_cast<LRESULT>(pAllPoints);
+}
+
+// Display the help about dialog.
+BOOL CMainFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
 }
 
 void CMainFrame::OnInitialUpdate()

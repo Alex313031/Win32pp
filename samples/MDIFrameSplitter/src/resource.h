@@ -44,6 +44,10 @@
 #define IDC_SPLITH                      180
 #define IDC_SPLITV                      181
 
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     190
+#define IDC_STATIC2                     191
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

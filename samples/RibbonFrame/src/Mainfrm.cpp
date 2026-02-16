@@ -302,6 +302,18 @@ BOOL CMainFrame::OnFileSaveAs()
     return TRUE;
 }
 
+// Display the help about dialog.
+BOOL CMainFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
 // OnMRUList is called in response to selection from the recent files list.
 // The recent files list contains a list of the Most Recently Used files.
 BOOL CMainFrame::OnMRUList(const PROPERTYKEY* key, const PROPVARIANT* ppropvarValue)

@@ -221,10 +221,27 @@
     <ClInclude Include="..\..\..\include\wxx_messagepump0.h">
       <Filter>Win32++</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\AboutDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\src\Resource.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\src\res\SystemDPI.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\src\res\Globe.ico" />
+    <Image Include="..\src\res\MenuIcons16.bmp" />
+    <Image Include="..\src\res\MenuIcons24.bmp" />
+    <Image Include="..\src\res\Internet24_n.bmp" />
+    <Image Include="..\src\res\Internet24_h.bmp" />
+    <Image Include="..\src\res\Internet24_d.bmp" />
+    <Image Include="..\src\res\Browser_n.bmp" />
+    <Image Include="..\src\res\Browser_h.bmp" />
+    <Image Include="..\src\res\Browser_d.bmp" />
   </ItemGroup>
 </Project>

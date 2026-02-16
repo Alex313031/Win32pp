@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "View.h"
 #include "MyCombo.h"
 #include "resource.h"
@@ -26,6 +27,7 @@ protected:
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
     virtual LRESULT OnDpiChanged(UINT msg, WPARAM wparam, LPARAM lparam) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual void    OnMenuUpdate(UINT id) override;
     virtual BOOL    SaveRegistrySettings() override;
@@ -66,6 +68,7 @@ private:
     LRESULT OnGetMinMaxInfo(UINT msg, WPARAM wparam, LPARAM lparam);
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CView m_view;
     CToolBar m_arrows;
     CToolBar m_cards;

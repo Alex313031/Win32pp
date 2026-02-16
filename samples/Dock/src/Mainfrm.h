@@ -7,6 +7,7 @@
 
 
 #include "Dockers.h"
+#include "AboutDialog.h"
 
 // The docker identifiers (dock IDs)
 const int ID_DOCK_CLASSES1 = 1;
@@ -34,6 +35,7 @@ protected:
     virtual DockPtr NewDockerFromID(int id) override;
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual void OnMenuUpdate(UINT id) override;
     virtual void PreCreate(CREATESTRUCT& cs) override;
@@ -67,7 +69,8 @@ private:
     void SetDockStylesToDefault();
 
     // member variables
-    CViewSimple m_view;
+    CAboutDialog m_aboutDialog;
+    CViewSimple  m_view;
     bool m_use3DBorder;
     bool m_disableUndocking;
     bool m_disableResize;

@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "SplitterPanes.h"
 
 // The docker identifiers (dock IDs)
@@ -27,6 +28,7 @@ public:
 protected:
     virtual DockPtr NewDockerFromID(int id) override;
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual void OnMenuUpdate(UINT id) override;
     virtual void PreCreate(CREATESTRUCT& cs) override;
@@ -50,6 +52,7 @@ private:
     void LoadDefaultWindowPanes();
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CViewSimple m_mainView;
     CDockText* m_pDockText;
     CDockTree* m_pDockTree;

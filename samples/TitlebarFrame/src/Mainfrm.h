@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "View.h"
 
 enum class TitlebarButton
@@ -62,6 +63,7 @@ protected:
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
     virtual LRESULT OnCustomDraw(LPNMHDR pNMHDR) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual void    RecalcLayout() override;
     virtual void    SetupMenuIcons() override;
@@ -105,6 +107,7 @@ private:
     LRESULT OnPreviewPrint();
     LRESULT OnPreviewSetup();
 
+    CAboutDialog m_aboutDialog;
     CView m_view;
     CPrintPreview<CView> m_preview;
     TitlebarButton m_hoveredButton;

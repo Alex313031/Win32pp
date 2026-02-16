@@ -1,7 +1,7 @@
 [Project]
 FileName=FastGDI_DEBUG.dev
 Name=FastGDI
-UnitCount=16
+UnitCount=17
 Type=0
 Ver=2
 ObjFiles=
@@ -202,6 +202,16 @@ BuildCmd=
 
 [Unit16]
 FileName=..\src\UserMessages.h
+CompileCpp=1
+Folder=Header
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit17]
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

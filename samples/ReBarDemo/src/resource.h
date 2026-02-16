@@ -31,8 +31,11 @@
 
 // ID for arrows Toolbar band
 #define IDC_BANDARROWS                  170
-
 #define IDB_TOOLBAR16                   180
+
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     190
+#define IDC_STATIC2                     191
 
 
 // Next default values for new objects

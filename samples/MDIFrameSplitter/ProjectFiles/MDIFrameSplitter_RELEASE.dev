@@ -1,7 +1,7 @@
 [Project]
 FileName=MDIFrameSplitter_RELEASE.dev
 Name=MDIFrameSplitter
-UnitCount=15
+UnitCount=16
 Type=0
 Ver=2
 ObjFiles=
@@ -221,7 +221,7 @@ AutoIncBuildNr=0
 SyncProduct=0
 
 [Unit16]
-FileName=..\src\SplitterMDIChild.h
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

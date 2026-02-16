@@ -39,6 +39,9 @@
 #define IDC_PREVIEW                     169
 #define IDC_CHECK1                      170
 
+#define IDC_STATIC1                     180
+#define IDC_STATIC2                     181
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

@@ -156,8 +156,7 @@ void CView::Print()
     if (printDlg.DoModal(*this) == IDOK)    // Throws exception if there is no default printer.
     {
         // Zero and then initialize the members of a DOCINFO structure.
-        DOCINFO di;
-        memset(&di, 0, sizeof(DOCINFO));
+        DOCINFO di = {};
         di.cbSize = sizeof(DOCINFO);
         di.lpszDocName = L"Scribble Printout";
 

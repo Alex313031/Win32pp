@@ -1,7 +1,7 @@
 [Project]
 FileName=DDXDemo_RELEASE.dev
 Name=DDXDemo
-UnitCount=16
+UnitCount=17
 Type=0
 Ver=2
 ObjFiles=
@@ -211,7 +211,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit17]
-FileName=..\src\MyScrollbar.h
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

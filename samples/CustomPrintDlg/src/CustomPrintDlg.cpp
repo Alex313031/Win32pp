@@ -189,7 +189,7 @@ INT_PTR CCustomPrintDlg::DoSetupModal(HWND owner)
     GetApp()->UpdateDefaultPrinter();
 
     // Display the print setup dialog.
-    PRINTDLG pd{};
+    PRINTDLG pd = {};
     pd.lStructSize = sizeof(pd);
     pd.hDevMode = GetApp()->GetHDevMode();
     pd.hDevNames = GetApp()->GetHDevNames();

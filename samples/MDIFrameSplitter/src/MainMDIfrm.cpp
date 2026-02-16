@@ -81,6 +81,18 @@ LRESULT CMainMDIFrame::OnGetMinMaxInfo(UINT msg, WPARAM wparam, LPARAM lparam)
     return FinalWindowProc(msg, wparam, lparam);
 }
 
+// Display the help about dialog.
+BOOL CMainMDIFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
 // Called after the window is created.
 // Called after OnCreate.
 void CMainMDIFrame::OnInitialUpdate()

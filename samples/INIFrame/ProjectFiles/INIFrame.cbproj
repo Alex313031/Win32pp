@@ -355,6 +355,9 @@
         <None Include="..\..\..\include\wxx_wincore0.h">
             <BuildOrder>66</BuildOrder>
         </None>
+        <None Include="..\src\AboutDialog.h">
+            <BuildOrder>67</BuildOrder>
+        </None>
         <CppCompile Include="..\src\Doc.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>

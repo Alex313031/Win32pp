@@ -123,6 +123,7 @@
 		<Unit filename="../../../include/wxx_webbrowser.h" />
 		<Unit filename="../../../include/wxx_wincore.h" />
 		<Unit filename="../../../include/wxx_wincore0.h" />
+		<Unit filename="../src/AboutDialog.h" />
 		<Unit filename="../src/ColourAdjust.cpp" />
 		<Unit filename="../src/ColourAdjust.h" />
 		<Unit filename="../src/FastGDIApp.cpp" />

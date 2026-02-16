@@ -43,6 +43,9 @@
 #define IDP_EDIT_PASTEDISABLED          217
 #define IDP_HELP_ABOUTDISABLED          218
 
+#define IDC_STATIC1                     220
+#define IDC_STATIC2                     221
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

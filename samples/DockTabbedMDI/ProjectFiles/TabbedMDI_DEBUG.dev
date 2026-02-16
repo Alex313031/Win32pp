@@ -1,7 +1,7 @@
 [Project]
 FileName=TabbedMDI_DEBUG.dev
 Name=TabbedMDI
-UnitCount=25
+UnitCount=26
 Type=0
 Ver=2
 ObjFiles=
@@ -241,7 +241,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit26]
-FileName=..\src\Text.h
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

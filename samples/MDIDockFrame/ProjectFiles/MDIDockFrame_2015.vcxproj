@@ -74,6 +74,7 @@
     <ClInclude Include="..\..\..\include\wxx_webbrowser.h" />
     <ClInclude Include="..\..\..\include\wxx_wincore.h" />
     <ClInclude Include="..\..\..\include\wxx_wincore0.h" />
+    <ClInclude Include="..\src\AboutDialog.h" />
     <ClInclude Include="..\src\Files.h" />
     <ClInclude Include="..\src\MainMDIfrm.h" />
     <ClInclude Include="..\src\MDIFrameApp.h" />

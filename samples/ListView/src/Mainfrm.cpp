@@ -43,7 +43,7 @@ BOOL CMainFrame::OnCommand(WPARAM wparam, LPARAM)
     case IDM_FILE_EXIT:         OnFileExit();      return TRUE;
     case IDW_VIEW_STATUSBAR:    OnViewStatusBar(); return TRUE;
     case IDW_VIEW_TOOLBAR:      OnViewToolBar();   return TRUE;
-    case IDM_HELP_ABOUT:        OnHelp();          return TRUE;
+    case IDM_HELP_ABOUT:        OnHelp();     return TRUE;
     }
 
     return FALSE;
@@ -87,6 +87,19 @@ void CMainFrame::OnFileExit()
 {
     Close();
 }
+
+// Display the help about dialog.
+BOOL CMainFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
+    return TRUE;
+}
+
 
 // Called after the window is created.
 void CMainFrame::OnInitialUpdate()

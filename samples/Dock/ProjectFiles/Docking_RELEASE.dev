@@ -1,7 +1,7 @@
 [Project]
 FileName=Docking_RELEASE.dev
 Name=Docking
-UnitCount=13
+UnitCount=14
 Type=0
 Ver=2
 ObjFiles=
@@ -142,7 +142,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit14]
-FileName=..\src\Views.h
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

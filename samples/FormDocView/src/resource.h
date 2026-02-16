@@ -7,7 +7,7 @@
 #include "default_resource.h"
 
 
-//Resource IDs for standard menu items and ToolBar items
+// Resource IDs for standard menu items and ToolBar items
 #define IDM_FILE_NEW                    121
 #define IDM_FILE_OPEN                   122
 #define IDM_FILE_SAVE                   123
@@ -23,7 +23,7 @@
 #define IDM_EDIT_DELETE                 135
 #define IDM_HELP_ABOUT                  140
 
-//Resource IDs for the app's menu-items
+// Resource IDs for the app's menu-items
 #define ID_RADIO_A                      200
 #define ID_RADIO_B                      201
 #define ID_RADIO_C                      202
@@ -31,7 +31,7 @@
 #define ID_CHECK_B                      211
 #define ID_CHECK_C                      212
 
-//Resource IDs for the dialog
+// Resource IDs for the dialog
 #define IDD_DIALOG1                     301
 #define IDC_EDIT1                       320
 #define IDC_LIST1                       321
@@ -43,6 +43,10 @@
 #define IDC_HOTKEY1                     340
 #define IDB_BITMAP1                     350
 #define IDB_MENUICONS                   351
+
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     400
+#define IDC_STATIC2                     401
 
 // Next default values for new objects
 //

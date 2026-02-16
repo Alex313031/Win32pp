@@ -22,7 +22,11 @@
 #define IDM_EDIT_PASTE                  134
 #define IDM_EDIT_DELETE                 135
 #define IDM_HELP_ABOUT                  140
-#define IDM_NEW_MENU                     141
+#define IDM_NEW_MENU                    141
+
+// Resource IDs for the about dialog
+#define IDC_STATIC1                     160
+#define IDC_STATIC2                     161
 
 ///////////////////////////////////////////////
 

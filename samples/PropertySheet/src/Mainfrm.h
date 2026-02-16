@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "View.h"
 #include "MyPropertySheet.h"
 
@@ -23,6 +24,7 @@ public:
 protected:
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual LRESULT OnNotify(WPARAM wparam, LPARAM lparam) override;
     virtual void SetupMenuIcons() override;
@@ -41,6 +43,7 @@ private:
     BOOL OnWizard();
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CView m_view;
     CMyPropertySheet m_modelessPS;
 };

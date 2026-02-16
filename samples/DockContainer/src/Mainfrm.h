@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "MainContainer.h"
 
 
@@ -34,6 +35,7 @@ protected:
     virtual DockPtr NewDockerFromID(int id) override;
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual void OnMenuUpdate(UINT id) override;
     virtual void PreCreate(CREATESTRUCT& cs) override;
@@ -62,6 +64,7 @@ private:
     void SetContainerTabsAtTop(bool isAtTop);
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CMainContainer m_view;
     bool m_isContainerTabsAtTop;
     bool m_hideSingleTab;

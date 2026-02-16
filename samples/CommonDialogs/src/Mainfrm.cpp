@@ -80,7 +80,7 @@ void CMainFrame::OnCloseDoc()
 // text foreground, text background, or control background. NOTE: colors
 // selected for controls in the view are painted by the OnCtlColor()
 // method invoked in the WndProc() loop each time the control is redrawn.
-// The staus bar color has no message to redraw it, so it is set here.
+// The status bar color has no message to redraw it, so it is set here.
 void CMainFrame::OnColorChoice()
 {
     if (m_colorChoice.DoModal(*this) != IDOK)

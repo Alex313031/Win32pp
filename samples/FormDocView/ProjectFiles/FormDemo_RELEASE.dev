@@ -1,7 +1,7 @@
 [Project]
 FileName=FormDemo_RELEASE.dev
 Name=FormDemo
-UnitCount=15
+UnitCount=16
 Type=0
 Ver=2
 ObjFiles=
@@ -200,9 +200,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit16]
-FileName=..\src\StaticImage.cpp
+FileName=..\src\AboutDialog.h
 CompileCpp=1
-Folder=Source
+Folder=Header
 Compile=1
 Link=1
 Priority=1000

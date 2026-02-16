@@ -1,7 +1,7 @@
 [Project]
 FileName=Explorer_DEBUG.dev
 Name=Explorer
-UnitCount=19
+UnitCount=20
 Type=0
 Ver=2
 ObjFiles=
@@ -261,7 +261,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit20]
-FileName=..\src\RightPane.h
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

@@ -41,8 +41,7 @@ CView::~CView()
 // Navigate to the web page.
 void CView::Navigate(LPCWSTR str)
 {
-    VARIANT vars[4];
-    memset(vars, 0, sizeof(vars));
+    VARIANT vars[4] = {};
     CComBSTR BStrURL(str);
     m_pInetExplorer->Navigate(BStrURL, vars, vars+1, vars+2, vars+3);
     SysFreeString(BStrURL);

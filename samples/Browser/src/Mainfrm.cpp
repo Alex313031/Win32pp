@@ -164,7 +164,7 @@ BOOL CMainFrame::OnCommand(WPARAM wparam, LPARAM lparam)
     case IDM_EDIT_DELETE:    return OnEditDelete();
     case IDM_FILE_EXIT:      return OnFileExit();
     case IDM_FORWARD:        return OnForward();
-    case IDM_HELP_ABOUT:     return OnHelpAbout();
+    case IDM_HELP_ABOUT:     return OnHelp();
     case IDM_HOME:           return OnHome();
     case IDM_FILE_PRINT:     return OnPrint();
     case IDM_FILE_PREVIEW:   return OnPrintPreview();
@@ -304,9 +304,14 @@ BOOL CMainFrame::OnForward()
 }
 
 // Display the help about dialog.
-BOOL CMainFrame::OnHelpAbout()
+BOOL CMainFrame::OnHelp()
 {
-    OnHelp();
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
+
     return TRUE;
 }
 

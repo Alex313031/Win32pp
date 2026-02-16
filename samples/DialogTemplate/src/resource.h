@@ -24,6 +24,8 @@
 #define IDB_MENUICONS                   150
 
 #define IDI_WINDOWS                     160
+#define IDC_STATIC1                     162
+#define IDC_STATIC2                     163
 
 // Next default values for new objects
 //

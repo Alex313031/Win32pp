@@ -6,6 +6,7 @@
 #define MAINFRM_H
 
 
+#include "AboutDialog.h"
 #include "MyTabbedMDI.h"
 
 // The docker identifiers (dock IDs)
@@ -40,6 +41,7 @@ protected:
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
     virtual LRESULT OnDockActivated(UINT msg, WPARAM wparam, LPARAM lparam) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual LRESULT OnInitMenuPopup(UINT msg, WPARAM wparam, LPARAM lparam) override;
     virtual void    OnMenuUpdate(UINT id) override;
@@ -79,6 +81,7 @@ private:
     void SetMDITabsAtTop(bool atTop);
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CMyTabbedMDI m_myTabbedMDI;
     bool m_isContainerTabsAtTop;
     bool m_isHideSingleTab;

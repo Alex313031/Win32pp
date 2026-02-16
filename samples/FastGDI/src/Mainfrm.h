@@ -4,6 +4,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "MainView.h"
 #include "ImageView.h"
 
@@ -32,6 +33,7 @@ protected:
     virtual BOOL OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int  OnCreate(CREATESTRUCT& cs) override;
     virtual LRESULT OnDpiChanged(UINT msg, WPARAM wparam, LPARAM lparam) override;
+    virtual BOOL OnHelp() override;
     virtual void OnInitialUpdate() override;
     virtual void OnMenuUpdate(UINT id) override;
     virtual LRESULT OnWindowPosChanged(UINT msg, WPARAM wparam, LPARAM lparam) override;
@@ -63,6 +65,7 @@ private:
     void ModifyBitmap(int cRed, int cGreen, int cBlue, BOOL isGray);
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CMainView m_mainView;
     CPrintPreview<CImageView> m_preview;   // CImageView is the source of the PrintPage function
     CString m_pathName;

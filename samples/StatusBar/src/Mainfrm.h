@@ -5,6 +5,7 @@
 #ifndef MAINFRM_H
 #define MAINFRM_H
 
+#include "AboutDialog.h"
 #include "View.h"
 #include "Hyperlink.h"
 
@@ -25,6 +26,7 @@ protected:
     virtual BOOL    DrawStatusBarBkgnd(CDC& dc, CStatusBar& statusbar) override;
     virtual BOOL    OnCommand(WPARAM wparam, LPARAM lparam) override;
     virtual int     OnCreate(CREATESTRUCT& cs) override;
+    virtual BOOL    OnHelp() override;
     virtual void    OnInitialUpdate() override;
     virtual void    SetStatusIndicators() override;
     virtual void    SetStatusParts() override;
@@ -45,6 +47,7 @@ private:
     void OnTimer();
 
     // Member variables
+    CAboutDialog m_aboutDialog;
     CView m_view;
     CHyperlink m_hyperlink;
     CProgressBar m_progressBar;

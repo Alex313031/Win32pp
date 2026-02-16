@@ -82,6 +82,10 @@
   // Resource ID for small menu icons
 #define IDB_TOOLBAR16                   603
 
+  // Resource IDs for the about dialog
+#define IDC_STATIC1                     610
+#define IDC_STATIC2                     611
+
 /*----------------------------------------------------------------------------*/
 #endif // RESOURCE_H
 

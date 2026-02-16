@@ -1,7 +1,7 @@
 [Project]
 FileName=MDIFrameDemo_DEBUG.dev
 Name=MDIFrameDemo
-UnitCount=21
+UnitCount=22
 Type=0
 Ver=2
 ObjFiles=
@@ -252,6 +252,16 @@ BuildCmd=
 
 [Unit21]
 FileName=..\src\MDIDemoApp.h
+CompileCpp=1
+Folder=Header
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit22]
+FileName=..\src\AboutDialog.h
 CompileCpp=1
 Folder=Header
 Compile=1

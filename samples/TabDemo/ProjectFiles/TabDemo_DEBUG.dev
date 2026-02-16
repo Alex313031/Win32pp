@@ -1,7 +1,7 @@
 [Project]
 FileName=TabDemo_DEBUG.dev
 Name=TabDemo
-UnitCount=17
+UnitCount=18
 Type=0
 Ver=2
 ObjFiles=
@@ -221,9 +221,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit18]
-FileName=..\src\MyTab.cpp
+FileName=..\src\AboutDialog.h
 CompileCpp=1
-Folder=Source
+Folder=Header
 Compile=1
 Link=1
 Priority=1000

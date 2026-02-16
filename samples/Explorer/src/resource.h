@@ -40,6 +40,9 @@
 #define IDB_TOOLBAR_HOT                 165
 #define IDB_TOOLBAR_DIS                 166
 
+#define IDC_STATIC1                     170
+#define IDC_STATIC2                     171
+
 // Next default values for new objects
 //
 #ifdef APSTUDIO_INVOKED

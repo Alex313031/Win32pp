@@ -60,7 +60,7 @@ BOOL CMainMDIFrame::OnFileSave()
 BOOL CMainMDIFrame::OnFilePrint()
 {
     // Bring up a dialog to choose the printer
-    PRINTDLG pd{};
+    PRINTDLG pd = {};
     pd.lStructSize = sizeof( pd );
     pd.Flags = PD_RETURNDC;
     pd.hwndOwner = GetHwnd();
@@ -70,6 +70,18 @@ BOOL CMainMDIFrame::OnFilePrint()
 
     // TODO:
     // Add your own code here. Refer to the tutorial for additional information
+
+    return TRUE;
+}
+
+// Display the help about dialog.
+BOOL CMainMDIFrame::OnHelp()
+{
+    // Ensure only one dialog displayed even for multiple hits of the F1 button.
+    if (!m_aboutDialog.IsWindow())
+    {
+        m_aboutDialog.DoModal(*this);
+    }
 
     return TRUE;
 }
