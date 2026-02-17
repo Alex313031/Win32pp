@@ -14,6 +14,7 @@ pushd ..\Samples
 if exist "..\output\VS2022\Debug" rmdir /s /q "..\output\VS2022\Debug"
 if exist "..\output\VS2022\Release" rmdir /s /q "..\output\VS2022\Release"
 if exist "..\output\VS2022\Tutorials" rmdir /s /q "..\output\VS2022\Tutorials"
+if not exist "..\output" mkdir "..\output"
 
 @echo on
 

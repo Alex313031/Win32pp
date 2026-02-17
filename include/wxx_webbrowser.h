@@ -1,5 +1,5 @@
-// Win32++   Version 10.2.0
-// Release Date: 20th September 2025
+// Win32++   Version 10.2.1
+// Release Date: TBA
 //
 //      David Nash
 //      email: dnash@bigpond.net.au
@@ -7,7 +7,7 @@
 //           https://github.com/DavidNash2024/Win32xx
 //
 //
-// Copyright (c) 2005-2025  David Nash
+// Copyright (c) 2005-2026  David Nash
 //
 // Permission is hereby granted, free of charge, to
 // any person obtaining a copy of this software and
@@ -39,8 +39,8 @@
 #define _WIN32XX_WEBBROWSER_H_
 
 #include "wxx_appcore0.h"
-#include <ExDisp.h>
-#include <OCidl.h>
+#include <exdisp.h>
+#include <ocidl.h>
 
 
 namespace Win32xx

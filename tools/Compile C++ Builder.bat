@@ -14,6 +14,7 @@ pushd ..\Samples
 if exist "..\output\Embarcadero\Debug" rmdir /s /q "..\output\Embarcadero\Debug"
 if exist "..\output\Embarcadero\Release" rmdir /s /q "..\output\Embarcadero\Release"
 if exist "..\output\Embarcadero\Tutorials" rmdir /s /q "..\output\Embarcadero\Tutorials"
+if not exist "..\output" mkdir "..\output"
 
 @echo on
 

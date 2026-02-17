@@ -13,6 +13,7 @@ call CleanTutorials
 REM: Change the directory to the parent (Pushes the directory change on to the stack)
 pushd ..\Samples
 if exist "..\output\MinGW" rmdir /s /q "..\output\MinGW"
+if not exist "..\output" mkdir "..\output"
 
 
 REM: Compile the code

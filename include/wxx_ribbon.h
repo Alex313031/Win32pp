@@ -1,5 +1,5 @@
-// Win32++   Version 10.2.0
-// Release Date: 20th September 2025
+// Win32++   Version 10.2.1
+// Release Date: TBA
 //
 //      David Nash
 //      email: dnash@bigpond.net.au
@@ -7,7 +7,7 @@
 //           https://github.com/DavidNash2024/Win32xx
 //
 //
-// Copyright (c) 2005-2025  David Nash
+// Copyright (c) 2005-2026  David Nash
 //
 // Permission is hereby granted, free of charge, to
 // any person obtaining a copy of this software and
@@ -55,8 +55,8 @@
 //     code is run on an earlier operating system, it reverts back to a menu
 //     and toolbar.
 
-#include <UIRibbon.h>                   // Contained within the Windows 7 SDK
-#include <UIRibbonPropertyHelpers.h>
+#include <uiribbon.h>                   // Contained within the Windows 7 SDK
+#include <uiribbonpropertyhelpers.h>
 
 #include "wxx_frame.h"
 #include "wxx_dockframe.h"
